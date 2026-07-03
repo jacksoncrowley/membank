@@ -11,7 +11,7 @@ import html
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-CSV_PATH = ROOT / "lipid_properties.csv"
+CSV_PATH = ROOT / "data" / "lipid_properties.csv"
 OUT_PATH = ROOT / "docs" / "index.html"
 
 HEADING_HTML = """

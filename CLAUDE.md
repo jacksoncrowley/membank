@@ -29,11 +29,11 @@ in a *derived* view, and even there you report the spread, never collapse it.
 
 | file | rows | what it is |
 |---|---|---|
-| `lipid_properties.csv` | 4,032 | **Primary table.** One reported value per row, 20 columns. This is the source of truth. |
-| `lipid_consensus_summary.csv` | 951 | Derived reconciliation. Groups by (lipid, property, chain, type, 5 °C temperature bin) and reports n/mean/median/std/min/max/spread%. **Generated from the primary table — never hand-edit.** |
+| `data/lipid_properties.csv` | 4,032 | **Primary table.** One reported value per row, 20 columns. This is the source of truth. |
+| `data/lipid_consensus_summary.csv` | 951 | Derived reconciliation. Groups by (lipid, property, chain, type, 5 °C temperature bin) and reports n/mean/median/std/min/max/spread%. **Generated from the primary table — never hand-edit.** |
 | `lipid_db_schema.md` | — | Human data dictionary (design intent + full controlled vocabularies, including terms not yet populated). |
-| `candidates.csv` | 20 | Queued literature (PubMed hits) for gap properties (Tm, diffusion). Not yet extracted. |
-| `source_doi_table.csv` | — | Index of the 489 distinct DOIs × type × row-count. Good backing for a "Sources" page. |
+| `data/candidates.csv` | 20 | Queued literature (PubMed hits) for gap properties (Tm, diffusion). Not yet extracted. |
+| `data/source_doi_table.csv` | — | Index of the 489 distinct DOIs × type × row-count. Good backing for a "Sources" page. |
 | `lipid_db_report.md` | — | Provenance & methods narrative (sources, extraction, known disagreements, gaps). Good backing for an "About / Methods" page. |
 | `fig_coverage.png`, `fig_apl_vs_temp.png` | — | Reference figures. The web app should render its own interactive versions; use these to sanity-check that yours tell the same story. |
 
